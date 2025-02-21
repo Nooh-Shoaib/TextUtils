@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@layer base {
+  :root {
+    /* Light theme */
+    --background: #ffffff;
+    --foreground: #171717;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 4rem;
+  }
+
+
+  .dark {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer components {
+  /* Layout Components */
+  .page-container {
+    @apply min-h-screen p-8 flex flex-col items-center bg-background text-foreground;
+  }
+
+  .content-container {
+    @apply w-full max-w-2xl space-y-6;
+  }
+
+  /* Form Elements */
+  .input-base {
+    @apply w-full p-4 border rounded-lg font-mono bg-background 
+           focus:ring-2 focus:ring-primary-500 focus:border-primary-500 
+           focus:outline-none transition-colors;
+  }
+
+  .button-base {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors
+           focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .button-primary {
+    @apply button-base bg-primary-600 text-white 
+           hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .button-secondary {
+    @apply button-base border border-gray-300 
+           hover:bg-gray-50 focus:ring-gray-500;
+  }
+
+  .button-danger {
+    @apply button-base bg-error text-white 
+           hover:bg-error-dark focus:ring-error;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply p-6 rounded-lg border border-gray-200 
+           hover:border-gray-300 transition-colors;
+  }
+
+  /* Typography */
+  .heading-1 {
+    @apply text-3xl font-bold mb-8;
+  }
+
+  .heading-2 {
+    @apply text-2xl font-semibold mb-6;
+  }
+
+  .heading-3 {
+    @apply text-xl font-medium mb-4;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://text-utils-eta-gold.vercel.app/sitemap.xml
