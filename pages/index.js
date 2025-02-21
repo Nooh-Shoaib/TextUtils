@@ -98,16 +98,34 @@ const features = [
     icon: <Icons.calculator sx={{ fontSize: 24 }} />,
   },
   {
+    title: "QR Code Generator",
+    description: "Generate QR codes for your text",
+    href: "/qrcode",
+    icon: <Icons.qrcode sx={{ fontSize: 24 }} />,
+  },
+  {
     title: "QR Scanner",
     description: "Scan QR codes using your device's camera",
     href: "/qr-scanner",
     icon: <Icons.scanner sx={{ fontSize: 24 }} />,
   },
   {
-    title: "QR Code Generator",
-    description: "Generate QR codes for your text",
-    href: "/qrcode",
-    icon: <Icons.qrcode sx={{ fontSize: 24 }} />,
+    title: "Time Zone Converter",
+    description: "Convert time between different time zones",
+    href: "/time",
+    icon: <Icons.time sx={{ fontSize: 24 }} />,
+  },
+  {
+    title: "Color Picker",
+    description: "Pick colors from your device's screen",
+    href: "/tools/color",
+    icon: <Icons.color sx={{ fontSize: 24 }} />,
+  },
+  {
+    title: "Unit Converter",
+    description: "Convert units of measurement",
+    href: "/unit-converter",
+    icon: <Icons.convert sx={{ fontSize: 24 }} />,
   },
 ];
 

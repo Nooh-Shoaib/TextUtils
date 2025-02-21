@@ -27,6 +27,7 @@ import { styled } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
 import { useRouter } from "next/router";
 import { Icons } from "./icons";
+import { FaGithub, FaHeart } from "react-icons/fa";
 
 const footerLinks = [
   { name: "Privacy", href: "/privacy" },
@@ -472,34 +473,27 @@ export default function Layout({ children, showBackButton = true, title }) {
               borderColor: "divider",
               textAlign: "center",
               display: "flex",
-              justifyContent: "space-between",
+              flexDirection: "column",
               alignItems: "center",
+              justifyContent: "center",
               className: "flex flex-col items-center justify-between",
             }}
           >
-            <Typography variant="body2" color="text.secondary">
-              © {new Date().getFullYear()} Text Utils Pro. All rights reserved.
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Made with{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-heart"
-                viewBox="0 0 16 16"
-              >
-                <path d="M8 2.748-.717-1.737C5.6 1.2 8 3.5 8 3.5s2.4-2.3 6.717-2.489C8 2.748 8 2.748 8 2.748z" />
-                <path d="M8 15s-1.5-1.5-4.5-4.5C1.5 8.5 0 6.5 0 4.5 0 2.5 1.5 1 3.5 1c1.5 0 2.5 1 2.5 1s1-1 2.5-1C14.5 1 16 2.5 16 4.5c0 2-1.5 4-3.5 6.5C9.5 13.5 8 15 8 15z" />
-              </svg>{" "}
-              by{" "}
+            <p className="flex items-center justify-center mb-2">
+              <span className="flex items-center">
+                Made with &nbsp;
+                <FaHeart className="text-red-500" size={20} /> &nbsp; by &nbsp;
+              </span>
               <Link
                 href="https://github.com/Nooh-Shoaib/TextUtils"
                 target="_blank"
+                className="text-blue-500 font-bold flex items-center"
               >
-                Nooh
+                Nooh &nbsp; <FaGithub className="text-2xl text-black" />
               </Link>
+            </p>
+            <Typography variant="body2" color="text.secondary">
+              © {new Date().getFullYear()} Text Utils Pro. All rights reserved.
             </Typography>
           </Box>
         </Container>
