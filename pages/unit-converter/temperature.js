@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import SEO from "../../components/SEO";
 
 export default function TemperatureConverter() {
   const [value, setValue] = useState(0);
@@ -43,6 +44,11 @@ export default function TemperatureConverter() {
 
   return (
     <Container>
+      <SEO
+        title="Temperature Converter - Convert Between Celsius, Fahrenheit, Kelvin"
+        description="Convert temperature units between Celsius, Fahrenheit, and Kelvin with our free online temperature converter."
+        keywords="temperature converter, Celsius, Fahrenheit, Kelvin, online tools"
+      />
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"

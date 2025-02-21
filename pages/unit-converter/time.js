@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import SEO from "../../components/SEO";
 
 const timeUnits = {
   seconds: 1,
@@ -38,6 +39,11 @@ export default function TimeConverter() {
 
   return (
     <Container>
+      <SEO
+        title="Time Converter - Convert Between Seconds, Minutes, Hours"
+        description="Easily convert time units between seconds, minutes, and hours with our free online time converter."
+        keywords="time converter, seconds, minutes, hours, online tools"
+      />
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"

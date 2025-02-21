@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import SEO from "../../components/SEO";
 
 const lengthUnits = {
   meters: 1,
@@ -39,6 +40,11 @@ export default function LengthConverter() {
 
   return (
     <Container>
+      <SEO
+        title="Length Converter - Convert Between Meters, Kilometers, Miles"
+        description="Convert length units between meters, kilometers, miles, and feet with our free online length converter."
+        keywords="length converter, meters, kilometers, miles, feet, online tools"
+      />
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"

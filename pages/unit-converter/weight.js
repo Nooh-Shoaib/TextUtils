@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import SEO from "../../components/SEO";
 
 const weightUnits = {
   grams: 1,
@@ -39,6 +40,11 @@ export default function WeightConverter() {
 
   return (
     <Container>
+      <SEO
+        title="Weight Converter - Convert Between Grams, Kilograms, Pounds"
+        description="Convert weight units between grams, kilograms, pounds, and ounces with our free online weight converter."
+        keywords="weight converter, grams, kilograms, pounds, ounces, online tools"
+      />
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"

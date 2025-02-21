@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import SEO from "../../components/SEO";
 
 const speedUnits = {
   "m/s": 1,
@@ -38,6 +39,11 @@ export default function SpeedConverter() {
 
   return (
     <Container>
+      <SEO
+        title="Speed Converter - Convert Between m/s, km/h, mph"
+        description="Convert speed units between meters per second, kilometers per hour, and miles per hour with our free online speed converter."
+        keywords="speed converter, m/s, km/h, mph, online tools"
+      />
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"

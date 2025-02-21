@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import SEO from "../../components/SEO";
 
 const volumeUnits = {
   liters: 1,
@@ -39,6 +40,11 @@ export default function VolumeConverter() {
 
   return (
     <Container>
+      <SEO
+        title="Volume Converter - Convert Between Liters, Milliliters, Gallons"
+        description="Convert volume units between liters, milliliters, gallons, and pints with our free online volume converter."
+        keywords="volume converter, liters, milliliters, gallons, pints, online tools"
+      />
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"
