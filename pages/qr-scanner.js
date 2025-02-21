@@ -23,7 +23,7 @@ import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import ImageIcon from "@mui/icons-material/Image";
 import SEO from "@/components/SEO";
 import jsQR from "jsqr";
-import QrScanner from "react-qr-scanner";
+import QrScanner from "@yudiel/react-qr-scanner";
 
 // Dynamically import QrReader with correct configuration
 
