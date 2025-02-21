@@ -468,13 +468,13 @@ export default function Layout({ children, showBackButton = true, title }) {
             sx={{
               mt: 4,
               pt: 4,
-
               borderTop: 1,
               borderColor: "divider",
               textAlign: "center",
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
+              className: "flex flex-col items-center justify-between",
             }}
           >
             <Typography variant="body2" color="text.secondary">
