@@ -26,17 +26,6 @@ import jsQR from "jsqr";
 import QrScanner from "react-qr-scanner";
 
 // Dynamically import QrReader with correct configuration
-const QrReader = dynamic(
-  () => import("react-qr-reader").then((mod) => mod.default),
-  {
-    ssr: false,
-    loading: () => (
-      <Box sx={{ display: "flex", justifyContent: "center", p: 3 }}>
-        <CircularProgress />
-      </Box>
-    ),
-  }
-);
 
 export default function QRScanner() {
   const [scanning, setScanning] = useState(false);
