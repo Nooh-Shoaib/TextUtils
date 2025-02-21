@@ -23,6 +23,7 @@ import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import ImageIcon from "@mui/icons-material/Image";
 import SEO from "@/components/SEO";
 import jsQR from "jsqr";
+import QrScanner from "react-qr-scanner";
 
 // Dynamically import QrReader with correct configuration
 const QrReader = dynamic(
@@ -164,10 +165,9 @@ export default function QRScanner() {
               <Paper sx={{ p: 3 }}>
                 {scanning ? (
                   <Box sx={{ position: "relative" }}>
-                    <QrReader
-                      delay={300}
-                      onError={handleError}
+                    <QrScanner
                       onScan={handleScan}
+                      onError={handleError}
                       style={{ width: "100%" }}
                       facingMode="environment"
                     />
